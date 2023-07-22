@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Change Background</title>
+</head>
+
+<body>
+    <div class="colour-switcher">
+        <span class="btn" id="black" onclick="changeBG ('#000000')"></span>
+        <span class="btn" id="white" onclick="changeBG ('#ffffff')"></span>
+        <span class="btn" id="violet" onclick="changeBG ('#8F00FF')"></span>
+        <span class="btn" id="grey" onclick="changeBG ('#696969')"></span>
+    </div>
+    <h1 class="text"> Home </h1>
+    <img src="img1 (2).jpg">
+    <p class="text">Evaluators, regardless of their skill and experience, can only emulate users—and not necessarily typical users of
+        the product. Feedback from target users can add an important dimension to some expert evaluations—for example,
+        of alternative navigation approaches for an existing product, or of a product recently targeted to a new user
+        audience. In these cases, TecEd conducts a few usability walkthroughs with people whose characteristics are
+        similar to the target user audience to supplement the evaluation.
+
+        When evaluating products in specific technical domains, a domain specialist joins the usability specialists on
+        the evaluation team.</p>
+
+        <script>
+            function changeBG(colour){
+                document.body.style.backgroundColor = colour;
+                let text = document.getElementsByClassName("text")
+                if(colour == "#000000"){
+                    for(let elm of text){
+                        elm.style.color ="#ffffff"
+                    }
+
+                }else{
+                    for(let elm of text){
+                        elm.style.color ="#000000"
+                    }
+                }
+            }
+        </script>
+
+</body>
+
+</html>
